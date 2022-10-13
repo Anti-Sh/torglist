@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+    --background-header-color: #139d6a;
+    --color-header-text: #fff;
+    --background-page-color: #eaeaf3;
+    --background-section-color: #fff;
+    --color-section-text: #000;
+    --background-input-color: #f0f0f0;
+}
+body{
+    margin: 0;
+    padding: 0%;
+    height: 100vh;
+    width: 100%;
+    background-color: var(--background-page-color);
+}
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* HEADER */
+header{
+    min-width: 100%;
+    min-height: 70px;
+    height: 70px;
+    background-color: var(--background-header-color);
+}
+header img{
+    display: block;
+    height: 40px;
+    padding-top: 15px;
+    margin: 0 auto 0;
+}
+
+/* SECTION */
+section{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: var(--background-section-color);
+}
+
+/*SEARCH*/
+.search-wrapper{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    height: 50px;
+    padding: 40px 0;
+    margin: 0 auto;
+}
+.search{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: var(--background-input-color);
+}
+.search-wrapper img{
+    padding: 10px;
+    height: 30px;
+}
+.search-wrapper input{
+    border: none;
+    font-size: 20px;
+}
+.search-wrapper input[type="text"]{
+    background-color: var(--background-input-color);
+    color: var(--color-section-text);
+    font-weight: 600;
+    width: calc(100% - 50px - 165px);
+}
+.search-wrapper input[type="button"]{
+    background-color: var(--background-header-color);
+    color: var(--color-header-text);
+    padding: 5px 10px;
+    font-weight: 600;
+    width: 165px;
+}
+
+input[type="button"]:hover{
+    cursor: pointer;
+}
+input[type="button"]:disabled{
+    cursor: not-allowed;
+    background-color: #b1b1b1;
+    color: #000;
+}
+
+/* TYPES */
+.types-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 60px;
+}
+.type{
+    width: 20%;
+}
+.types-wrapper .selected{
+    border: solid 4px var(--background-header-color);
+    border-radius: 2px;
+}
+.type:hover{
+    background-color: var(--background-input-color);
+    cursor: pointer;
+}
+.type span{
+    display: block;
+    font-size: 22px;
+    width: 100%;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.type img{
+    width: calc(100% - 40px);
+    padding: 20px;
+}
