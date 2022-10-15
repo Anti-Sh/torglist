@@ -1,9 +1,9 @@
 $(function(){
     var typesSelected = [];
-    var isRegionsClear = true;
-    var isMarketsClear = true;
-    var isCostFromClear = true;
-    var isCostToClear = true;
+    var RegionsSelected = [];
+    var MarketsSelected = [];
+    var CostFromClear = [];
+    var CostToClear = [];
 
     $("div.type").on("click", (e) =>{
         let item = $(e.currentTarget);
@@ -19,8 +19,23 @@ $(function(){
         }
         console.log(typesSelected);
     })
+
     $('select[name="regions"]').on("change", (e) =>{
-        let item = $(e.currentTarget);
-        console.log(item);
+        let item = e.currentTarget;
+        RegionsSelected = [];
+        for (var i = 0; i < item.options.length; i ++) {
+            if (item.options[i].selected) 
+                RegionsSelected.push(item.options[i].value);
+        }
+    })
+
+    $('select[name="markets"]').on("change", (e) =>{
+        let item = e.currentTarget;
+        MarketsSelected = [];
+        for (var i = 0; i < item.options.length; i ++) {
+            if (item.options[i].selected) 
+                MarketsSelected.push(item.options[i].value);
+        }
+        console.log(MarketsSelected);
     })
 });
