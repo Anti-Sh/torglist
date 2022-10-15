@@ -40,7 +40,12 @@ section{
     margin: 0 auto;
     background-color: var(--background-section-color);
 }
-
+h2,
+h3, 
+h4,
+h5{
+    text-align: center;
+}
 /*SEARCH*/
 .search-wrapper{
     display: flex;
@@ -69,6 +74,7 @@ section{
     color: var(--color-section-text);
     font-weight: 600;
     width: calc(100% - 50px - 165px);
+    outline:none;
 }
 .search-wrapper input[type="button"]{
     background-color: var(--background-header-color);
@@ -92,7 +98,7 @@ input[type="button"]:disabled{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding-bottom: 60px;
+    padding-bottom: 40px;
 }
 .type{
     width: 20%;
@@ -115,4 +121,41 @@ input[type="button"]:disabled{
 .type img{
     width: calc(100% - 40px);
     padding: 20px;
+}
+/* FILTERS */
+.filters-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.filter{
+    width: 30%;
+}
+.filter input,
+.filter select{
+    width: 100%;
+    font-size: 20px;
+    line-height: 26px;
+    border: none;
+    background-color: var(--background-input-color);
+    outline:none;
+}
+.filter select option:checked,
+.filter select option:hover,
+.filter select option:active,
+.filter select option:focus{
+    background-color: var(--background-header-color);
+    color: var(--color-header-text);
+    outline:none;
+}
+.filter span{ 
+    font-size: 20px;
+    font-weight: 600;
+}
+.filter label{
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
 }

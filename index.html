@@ -40,9 +40,37 @@
             </div>
         </div>
 
-        <h3>Фильтры</h3>
-        <div class="filters-wrapper">
+        <h2>Фильтры</h2>
 
+        <div class="filters-wrapper">
+            <div class="filter">
+                <span>Регион</span>
+                <select name="regions" multiple>
+                    <option value="1">Алтайский край</option>
+                    <option value="2">Новосибирская область</option>
+                    <option value="3">Республика Алтай</option>
+                    <option value="4">Кемеровская область</option>
+                    <option value="5">Москва</option>
+                </select>
+            </div>
+            <div class="filter">
+                <span>Биржа</span>
+                <select name="markets" multiple>
+                    <option value="1">MMM</option>
+                    <option value="2">bank234232</option>
+                    <option value="2">bank2232312</option>
+                    <option value="2">bank224242</option>
+                </select>
+            </div>
+            <div class="filter">
+                <span>Ценовой диапазон</span>
+                <br>
+                <label for="cost_from">От</label>
+                <input type="number" name="cost_from" step="1000" min="10000">
+                <br>
+                <label for="cost_from">До</label>
+                <input type="number" name="cost_to" step="1000" min="11000">
+            </div>
         </div>
     </section>
 
