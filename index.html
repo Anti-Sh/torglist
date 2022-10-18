@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <!-- <script src="node_modules/jquery/dist/jquery.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <link rel="stylesheet" href="src/css/style.css">
     <title>TorgList | Ваш гид в Торгах</title>
 </head>
@@ -23,19 +24,19 @@
 
         <div class="types-wrapper">
             <div class="type" id="type0">
-                <img src="src/img/types/appartments.png" alt="">
+                <img src="src/img/types/appartments.png" alt="appartments">
                 <span>Квартира</span>
             </div>
             <div class="type" id="type1">
-                <img src="src/img/types/house.png" alt="">
+                <img src="src/img/types/house.png" alt="house">
                 <span>Дом</span>
             </div>
             <div class="type" id="type2">
-                <img src="src/img/types/land_plot.png" alt="">
+                <img src="src/img/types/land_plot.png" alt="land_plot">
                 <span>Земельный участок</span>
             </div>
             <div class="type" id="type3">
-                <img src="src/img/types/garage.png" alt="">
+                <img src="src/img/types/garage.png" alt="garage">
                 <span>Гараж</span>
             </div>
         </div>
@@ -80,7 +81,7 @@
 
         <div class="result-wrapper">
             <div class="result">
-                <span class="header">Лот №1 - <a href="">Квартира</a></span>
+                <span class="header">Лот №1 - Квартира</span>
                 <span class="option"></span>
                 <span class="label">Адрес</span>
                 <span class="option">Новосибирская об-ть, г.Новосибирск, кв.Ленина, кв.65, кв.1</span>
@@ -90,7 +91,7 @@
                 <span class="option">106 кв. м.</span>
             </div>
             <div class="result">
-                <span class="header">Лот №2 - <a href="">Квартира</a></span>
+                <span class="header">Лот №2 - Квартира</span>
                 <span class="option"></span>
                 <span class="label">Адрес</span>
                 <span class="option">Новосибирская об-ть, г.Новосибирск, кв.Ленина, кв.65, кв.1</span>
@@ -100,7 +101,7 @@
                 <span class="option">106 кв. м.</span>
             </div>
             <div class="result">
-                <span class="header">Лот №3 - <a href="">Квартира</a></span>
+                <span class="header">Лот №3 - Квартира</span>
                 <span class="option"></span>
                 <span class="label">Адрес</span>
                 <span class="option">Новосибирская об-ть, г.Новосибирск, кв.Ленина, кв.65, кв.1Новосибирская об-ть, г.Новосибирск, кв.Ленина, кв.65, кв.1</span>
@@ -110,7 +111,7 @@
                 <span class="option">106 кв. м.</span>
             </div>
             <div class="result">
-                <span class="header">Лот №4 - <a href="">Квартира</a></span>
+                <span class="header">Лот №4 - Квартира</span>
                 <span class="option"></span>
                 <span class="label">Адрес</span>
                 <span class="option">Новосибирская об-ть, г.Новосибирск, кв.Ленина, кв.65, кв.1</span>
@@ -120,7 +121,7 @@
                 <span class="option">106 кв. м.</span>
             </div>
             <div class="result">
-                <span class="header">Лот №4 - <a href="">Квартира</a></span>
+                <span class="header">Лот №5 - Квартира</span>
                 <span class="option"></span>
                 <span class="label">Адрес</span>
                 <span class="option">Новосибирская об-ть, г.Новосибирск, кв.Ленина, кв.65, кв.1</span>
@@ -130,7 +131,17 @@
                 <span class="option">106 кв. м.</span>
             </div>
             <div class="result">
-                <span class="header">Лот №4 - <a href="">Квартира</a></span>
+                <span class="header">Лот №6 - Квартира</span>
+                <span class="option"></span>
+                <span class="label">Адрес</span>
+                <span class="option">Новосибирская об-ть, г.Новосибирск, кв.Ленина, кв.65, кв.1</span>
+                <span class="label">Начальная цена</span>
+                <span class="option">10.000.000</span>
+                <span class="label">Площадь</span>
+                <span class="option">106 кв. м.</span>
+            </div>
+            <div class="result">
+                <span class="header">Лот №7 - Квартира</span>
                 <span class="option"></span>
                 <span class="label">Адрес</span>
                 <span class="option">Новосибирская об-ть, г.Новосибирск, кв.Ленина, кв.65, кв.1</span>
@@ -143,7 +154,26 @@
             
         </div>
     </section>
-
+    <div class="item_detailed" style="display: none;">
+        <div class="item">
+            <h2>Лот №1 - Квартира</h2>
+            <span class="option"></span>
+            <span class="label">Адрес</span>
+            <span class="option">Новосибирская об-ть, г.Новосибирск, кв.Ленина, кв.65, кв.1</span>
+            <span class="label">Кадастровый номер</span>
+            <span class="option">47:14:1203001:814</span>
+            <span class="label">Начало торгов</span>
+            <span class="option">23.10.2022</span>
+            <span class="label">Начальная цена</span>
+            <span class="option">10.000.000</span>
+            <span class="label">Площадь</span>
+            <span class="option">106 кв. м.</span>
+            <div class="buttons-wrapper">
+                <input type="button" id="filters-clear1212" value="ЕГРН">
+                <input type="button" id="submit1212" value="Торги">
+            </div>
+        </div>
+    </div>
     <footer>
 
     </footer>

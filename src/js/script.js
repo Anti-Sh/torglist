@@ -36,6 +36,18 @@ $(function(){
             if (item.options[i].selected) 
                 MarketsSelected.push(item.options[i].value);
         }
-        console.log(MarketsSelected);
+    })
+
+    $('.result').on("click", (e) => {
+        let item = e.currentTarget;
+        $(".item_detailed").fadeToggle();
+    })
+
+    $('body').on("click", ".item_detailed", (e) => {
+        $(".item_detailed").fadeToggle();
+    })
+    $('body').on("click", ".item_detailed .item", (e) => {
+        e.preventDefault();
+        e.stopPropagation();
     })
 });
