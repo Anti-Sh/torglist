@@ -270,3 +270,59 @@ input[type="button"]:disabled,
     margin-top: 24px;
     margin-bottom: 12px;
 }
+
+/*PAGE SELECTOR*/
+.page-selector-wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+.page-selector-wrapper *{
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    color: #000;
+    background-color: var(--background-section-color);
+    text-align: center;
+}
+.page-selector-wrapper span{
+    margin: 0 5px;
+    padding: 0 5px;
+}
+.page-selector-wrapper span.selected{
+    color: var(--background-header-color);
+}
+.page-selector-wrapper span:hover{
+    cursor: pointer;
+}
+.page-selector-wrapper span.selected:hover{
+    cursor: default;
+}
+.page-selector-wrapper button{
+    background-color: var(--background-header-color);
+    border-radius: 3px;
+    color: var(--color-header-text);
+}
+.page-selector-wrapper button:hover{
+    cursor: pointer;
+}
+.page-selector-wrapper input[type="number"]::-webkit-outer-spin-button,
+.page-selector-wrapper input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.page-selector-wrapper input[type='number'],
+.page-selector-wrapper input[type="number"]:hover,
+.page-selector-wrapper input[type="number"]:focus {
+    appearance: none;
+    -moz-appearance: textfield;
+}
+
+/*FOOTER*/
+footer span{
+    display: block;
+    text-align: right;
+    margin: 10px;
+}
